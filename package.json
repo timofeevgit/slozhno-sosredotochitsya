@@ -1,0 +1,33 @@
+{
+  "name": "slozhno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "Проект \"Сложно сосредоточиться\"\r https://github.com/timofeevgit/slozhno-sosredotochitsya",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Hello!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+  },
+  "author": "Dmitry",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.10.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1"
+  }
+}

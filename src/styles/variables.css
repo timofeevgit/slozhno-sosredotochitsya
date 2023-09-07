@@ -1,0 +1,25 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  --main-font-family: 'IBM Plex mono', sans-serif;
+  --main-font-size: 18px;
+  --main-line-height: 23.4px;
+
+  --bg-color-light: #db00ff;
+  --bg-color-dark: #000028;
+}
+
+
+
+@media (width <= 376px) {
+  :root {
+    --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
