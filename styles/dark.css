@@ -19,6 +19,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   }
+  
   .decoration-rec {
     display: block;
   }
@@ -87,7 +88,7 @@
     outline: none;
     border: 1px solid #F1B2CE;;
   }
-}
+
 
 @media (prefers-color-scheme: dark) {
 
