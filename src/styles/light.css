@@ -6,9 +6,9 @@
 
 .page.theme_light {
 
-  background-image: url(/src/images/cover-image-light.png);
-  background-color: var(--bg-color-light);
-
+    background-image: url(/src/images/cover-image-light.png);
+    background-color: var(--bg-color-light);
+ 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
