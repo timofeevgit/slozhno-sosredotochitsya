@@ -474,11 +474,12 @@
 
   .decorated-zone::before {
     inset-inline-end: 10px;
+    inset-block-start: 10px;
   }
 
   .decoration-rec {
     right: 40px;
-    top: 22px;
+    top: 11px;
   }
 
   .footer.decorated-zone::before {
