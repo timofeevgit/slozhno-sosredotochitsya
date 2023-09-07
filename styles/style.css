@@ -390,7 +390,7 @@
     justify-content: center;
     align-items: center;
     gap: 55px;
-    margin-block-start: 68px;
+    margin-block-start: 70px;
   }
 
   .subtitle__container {
@@ -402,7 +402,7 @@
 
   .header__theme-menu {
     padding-inline-end: 10px;
-    padding-block-start: 75px;
+    padding-block-start: 74px;
   }
 
   .header__theme-menu-list {
@@ -413,7 +413,7 @@
   }
 
   .main {
-    margin-block-start: 39px;
+    margin-block-start: 40px;
     padding-inline: 10px;
     gap: 50px;
   }
