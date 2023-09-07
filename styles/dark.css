@@ -93,7 +93,7 @@
 @media (prefers-color-scheme: dark) {
 
   .page {
-    background-image: url(/src/images/cover-image-dark.png);
+    background-image: url(./images/cover-image-dark.png);
   }
 
   .decoration-rec {
