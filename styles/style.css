@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
