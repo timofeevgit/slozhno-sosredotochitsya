@@ -360,7 +360,7 @@
 
 /* Media для телефонов */
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   .header {
     min-height: 668px;
   }

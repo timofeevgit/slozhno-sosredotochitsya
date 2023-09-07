@@ -6,7 +6,7 @@
 
 .page.theme_light {
 
-    background-image: url(/src/images/cover-image-light.png);
+    background-image: url(./images/cover-image-light.png);
     background-color: var(--bg-color-light);
  
   /* сохраните этот селектор в приведённом виде.

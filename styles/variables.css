@@ -17,7 +17,7 @@
 
 
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   :root {
     --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
