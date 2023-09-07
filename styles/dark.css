@@ -7,7 +7,7 @@
 
 
 .page.theme_dark {
-  background-image: url(/src/images/cover-image-dark.png);
+  background-image: url(./images/cover-image-dark.png);
   background-color: var(--bg-color-dark);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -88,7 +88,7 @@
 @media (prefers-color-scheme: dark) {
 
   .page {
-    background-image: url(/src/images/cover-image-dark.png);
+    background-image: url(./images/cover-image-dark.png);
   }
 
   .decoration-rec {
