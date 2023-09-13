@@ -414,7 +414,7 @@
 
   .main {
     margin-block-start: 40px;
-    padding-inline: 10px;
+    margin-inline: 10px;
     gap: 50px;
   }
 
