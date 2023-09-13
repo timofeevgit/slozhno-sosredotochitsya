@@ -82,6 +82,7 @@
   padding-inline-start: 13px;
   padding-inline-end: 13px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {

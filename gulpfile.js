@@ -13,7 +13,7 @@ function html() {
 function css() {
   return gulp.src('src/styles/**/*.css')
         .pipe(plumber())
-        // .pipe(concat('bundle.css'))
+        .pipe(concat('bundle.css'))
                 .pipe(gulp.dest('dist/styles'))
                 .pipe(browserSync.reload({stream: true}));
 }
