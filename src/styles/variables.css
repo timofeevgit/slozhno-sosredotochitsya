@@ -7,7 +7,7 @@
   --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
-  --main-font-family: 'IBM Plex mono', sans-serif;
+  --main-font-family: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
 

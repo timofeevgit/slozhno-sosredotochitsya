@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(./images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -134,17 +134,16 @@
 .subtitle {
   color: #000028;
   font-family: var(--main-font-family);
-  font-size: 18px;
+  font-size: var(  --main-font-size);
   font-weight: 700;
-  line-height: 23.4px;
+  line-height: var(--main-line-height);
 }
 
 /* Main */
 
 .main {
   margin-block-start: 60px;
-  /* margin-block-start: 278px;  */
-  padding-inline: 20px;
+  margin-inline: 20px;
   display: grid;
   gap: 80px;
 }
@@ -152,18 +151,18 @@
 .main__title {
   color: #ff0070;
   font-family: var(--main-font-family);
-  font-size: 18px;
+  font-size: var(  --main-font-size);
   font-weight: 700;
-  line-height: 23.4px;
+  line-height: var(--main-line-height);
 }
 
 .main__text {
   color: #f1b2ce;
   font-family: var(--main-font-family);
-  font-size: 18px;
+  font-size: var(  --main-font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px;
+  line-height: var(--main-line-height);
 }
 
 .links {
@@ -338,11 +337,12 @@
     margin-inline-end: 20px;
     display: grid;
     grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-end: 3;
   }
 
   .main {
     margin-block-start: 60px;
+    word-break: break-word;
   }
 
   .what.main__title_container {
