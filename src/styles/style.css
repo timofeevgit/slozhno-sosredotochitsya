@@ -106,7 +106,8 @@
 /* Title cover */
 
 .cover__title_container {
-  margin-block-start: 274px;
+  /* margin-block-start: 274px; */
+  margin-block-start: 186px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr;
@@ -119,10 +120,13 @@
   grid-column-end: 1;
   color: var(--header-logo-color);
   text-shadow: 4px 4px 0 var(--section-heading-color);
-  font-family: var(--main-font-family);
   font-size: var(--header-logo-size);
+}
+
+.text-decor {
   font-weight: 700;
   line-height: 82.5%;
+  font-family: var(--main-font-family);
 }
 
 .title-decor {
@@ -171,7 +175,8 @@
 }
 
 .links {
-  text-shadow: 1px 2px 0 var(--section-heading-color);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #FF8DCB;
 }
 
 .links:hover {
@@ -193,7 +198,7 @@
 .why.section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  gap: 11px;
 }
 
 .article__text {
@@ -231,7 +236,7 @@
 .how.section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  gap: 11px;
 }
 
 .font-weight {
@@ -288,10 +293,7 @@
 .footer__title {
   color: var(--footer-logo-color);
   text-shadow: 2px 2px 0 var(--section-heading-color);
-  font-family: var(--main-font-family);
   font-size: var(--footer-logo-size);
-  font-weight: 700;
-  line-height: 82.5%;
 }
 
 .footer.decorated-zone {
@@ -341,27 +343,23 @@
   }
 
   .cover__title {
-    display: grid;
     grid-column-start: 5;
-    grid-column-end: 1;
   }
 
-  .subtitle__container {
-    margin-inline-end: 20px;
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 3;
+  .why.section {
+    gap: 20px;
+  }
+
+  .how.section {
+    gap: 20px;
   }
 
   .main {
-    margin-block-start: 60px;
     word-break: break-word;
   }
 
   .main__title_container.grid-section {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-block-end: 20px;
   }
 
   .what.section-texts {
@@ -422,9 +420,7 @@
   }
 
   .why.section {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .article__texts {
@@ -433,24 +429,18 @@
   }
 
   .main__title_container.grid-section {
-    display: grid;
     grid-template-columns: 2fr 0.5fr;
-    margin-block-end: 20px;
   }
 
   .how.section {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .pictures__section {
-    display: grid;
     gap: 10px;
   }
 
   .pictures__container {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
   }

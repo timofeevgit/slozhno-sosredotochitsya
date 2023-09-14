@@ -164,6 +164,10 @@
     color: var(--footer-logo-color);
   }
 
+  .links {
+    
+  }
+
   .links:hover {
     border-block-end: 1px solid var(--section-heading-color);
   }
