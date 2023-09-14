@@ -6,16 +6,17 @@
 :root {
   --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
   --main-font-family: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
-
   --bg-color-light: #db00ff;
   --bg-color-dark: #000028;
+  --nav-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --section-heading-color: #ff0070;
 }
-
-
 
 @media (width <= 375px) {
   :root {

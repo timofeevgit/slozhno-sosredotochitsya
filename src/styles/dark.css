@@ -4,6 +4,18 @@
   переключая тему
 */
 
+:root.theme_dark {
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
+  --main-font-family: 'IBM Plex mono', monospace;
+  --main-font-size: 18px;
+  --main-line-height: 23.4px;
+  --bg-color-light: #db00ff;
+  --bg-color-dark: #000028;
+  --nav-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --section-heading-color: #ff0070;
+}
 
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
@@ -12,80 +24,87 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  }
+}
 
-  .decoration-rec {
-    display: block;
-  }
+.theme_dark.decoration-rec {
+  display: block;
+}
 
-  .decorated-zone::after {
-    border-block-end: 1px solid #FF0070;
-    border-inline-start: 1px solid #FF0070;
-  }
+.theme_dark.decorated-zone::after {
+  border-block-end: 1px solid var(--nav-color);
+  border-inline-start: 1px solid var(--nav-color);
+}
 
-  .decorated-zone::before {
-    border-block-start: 1px solid #FF0070;
-    border-inline-end: 1px solid #FF0070;
-  }
+.theme_dark.decorated-zone::before {
+  border-block-start: 1px solid var(--nav-color);
+  border-inline-end: 1px solid var(--nav-color);
+}
 
-  .title-decor {
-    background-color: #FF0070;
-  }
+.theme_dark.title-decor {
+  background-color: #ff0070;
+}
 
-  .cover__title {
-    color: #DB00FF;
-  }
+.theme_dark.cover__title {
+  color: var(--header-logo-color);
+}
 
-  .subtitle {
-    color: #000028;
-  }
+.theme_dark.subtitle {
+  color: #000028;
+}
 
-  .main__title {
-    color: #FF0070;
-  }
+.theme_dark.main__title {
+  color: var(-section-heading-color);
+}
 
-  .main__text {
-    color: #F1B2CE;
-  }
+.theme_dark.main__text {
+  color: var(--main-text-color);
+}
 
-  .footer__title {
-    color: #DB00FF;
-  }
+.theme_dark.footer__title {
+  color: var(--footer-logo-color);
+}
 
-  .header__theme-menu-button {
-    color: #FF0070;
-    border: 1px solid transparent;
-  }
+.theme_dark.header__theme-menu-button {
+  color: var(--nav-color);
+  border: 1px solid transparent;
+}
 
-  .header__theme-menu-button:hover {
-    border: 1px solid rgba(255, 0, 112, 0.40);
-  }
+.theme_dark.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
 
-  .header__theme-menu-button_active {
-    border: 1px solid #FF0070;
-  }
+.theme_dark.header__theme-menu-button_active {
+  border: 1px solid var(--nav-color);
+}
 
-  .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-block-end: 1px solid #FF0070;
-  }
+.theme_dark.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--nav-color);
+}
 
-  .links {
-    text-shadow: 1px 2px 0 #FF0070;
-  }
+.theme_dark.links {
+  text-shadow: 1px 2px 0 #ff0070;
+}
 
-  .links:hover {
-    border-block-end: 1px solid #F1B2CE;
-  }
+.theme_dark.links:hover {
+  border-block-end: 1px solid var(--main-text-color);
+}
 
-  .links:focus-visible {
-    outline: none;
-    border: 1px solid #F1B2CE;;
-  }
+.theme_dark.links:focus-visible {
+  outline: none;
+  border: 1px solid var(--main-text-color);
+}
 
 
-@media (prefers-color-scheme: dark) {
 
+
+
+
+
+
+
+
+/* @media (prefers-color-scheme: dark) {
   .page {
     background-image: url(../images/cover-image-dark.png);
   }
@@ -95,21 +114,21 @@
   }
 
   .decorated-zone::after {
-    border-block-end: 1px solid #FF0070;
-    border-inline-start: 1px solid #FF0070;
+    border-block-end: 1px solid #ff0070;
+    border-inline-start: 1px solid #ff0070;
   }
 
   .decorated-zone::before {
-    border-block-start: 1px solid #FF0070;
-    border-inline-end: 1px solid #FF0070;
+    border-block-start: 1px solid #ff0070;
+    border-inline-end: 1px solid #ff0070;
   }
 
   .title-decor {
-    background-color: #FF0070;
+    background-color: #ff0070;
   }
 
   .cover__title {
-    color: #DB00FF;
+    color: #db00ff;
   }
 
   .subtitle {
@@ -117,45 +136,45 @@
   }
 
   .main__title {
-    color: #FF0070;
+    color: #ff0070;
   }
 
   .main__text {
-    color: #F1B2CE;
+    color: #f1b2ce;
   }
 
   .footer__title {
-    color: #DB00FF;
+    color: #db00ff;
   }
 
   .header__theme-menu-button {
-    color: #FF0070;
+    color: #ff0070;
     border: 1px solid transparent;
   }
 
   .header__theme-menu-button:hover {
-    border: 1px solid rgba(255, 0, 112, 0.40);
+    border: 1px solid rgba(255, 0, 112, 0.4);
   }
 
   .header__theme-menu-button_active {
-    border: 1px solid #FF0070;
+    border: 1px solid #ff0070;
   }
 
   .header__theme-menu-button:focus-visible {
     outline: none;
-    border-block-end: 1px solid #FF0070;
+    border-block-end: 1px solid #ff0070;
   }
 
   .links {
-    text-shadow: 1px 2px 0 #FF0070;
+    text-shadow: 1px 2px 0 #ff0070;
   }
 
   .links:hover {
-    border-block-end: 1px solid #F1B2CE;
+    border-block-end: 1px solid #f1b2ce;
   }
 
   .links:focus-visible {
     outline: none;
-    border: 1px solid #F1B2CE;;
+    border: 1px solid #f1b2ce;
   }
-}
+} */

@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 
 function html() {
   return gulp.src('src/**/*.html')
+                 .pipe(plumber())
                  .pipe(gulp.dest('dist/'))
                  .pipe(browserSync.reload({stream: true}));
 }
@@ -13,7 +14,7 @@ function html() {
 function css() {
   return gulp.src('src/styles/**/*.css')
         .pipe(plumber())
-        .pipe(concat('bundle.css'))
+        // .pipe(concat('bundle.css'))
                 .pipe(gulp.dest('dist/styles'))
                 .pipe(browserSync.reload({stream: true}));
 }
@@ -26,12 +27,14 @@ function images() {
 
 function fonts() {
   return gulp.src('src/fonts/**/*.{css,woff}')
+            .pipe(plumber())
             .pipe(gulp.dest('dist/fonts'))
             .pipe(browserSync.reload({stream: true}));
 }
 
 function scripts() {
   return gulp.src('src/scripts/**/*.js')
+            .pipe(plumber())
             .pipe(gulp.dest('dist/scripts'))
             .pipe(browserSync.reload({stream: true}));
 }
