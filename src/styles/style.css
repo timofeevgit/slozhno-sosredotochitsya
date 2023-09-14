@@ -106,7 +106,6 @@
 /* Title cover */
 
 .cover__title_container {
-  /* margin-block-start: 274px; */
   margin-block-start: 186px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
@@ -130,7 +129,7 @@
 }
 
 .title-decor {
-  background-color: var(--section-heading-color);
+  background-color: var(--accent-color);
 }
 
 .subtitle__container {

@@ -4,9 +4,10 @@
   переключая тему
 */
 
-:root.theme_light {
+.theme_light {
   --accent-color: #ff8dcb;
   --main-bg-color: #fff1f7;
+  --bg-color-light: #db00ff;
   --main-text-color: #353430;
   --nav-color: #353430;
   --section-heading-color: #353430;
@@ -61,7 +62,7 @@
   }
 
   .theme_light.title-decor {
-    background: #ff8dcb;
+    background-color: #ff8dcb;
   }
 
   .theme_light.subtitle {
@@ -90,7 +91,6 @@
   }
 
 
-/* Если предпочтение - светлая тема, то раскоментить здесь и закоментить @media в dark.css */
 
 @media (prefers-color-scheme: light) {
 
@@ -105,7 +105,7 @@
   }
 
   .page {
-    background-image: url(/src/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
 
   .header__theme-menu-button {
@@ -145,11 +145,7 @@
   }
 
   .title-decor {
-    background: var(--accent-color);
-  }
-
-  .subtitle {
-    color: var(--section-heading-color);
+    background-color: var(--accent-color);
   }
 
   .main__title {
@@ -162,10 +158,6 @@
 
   .footer__title {
     color: var(--footer-logo-color);
-  }
-
-  .links {
-    
   }
 
   .links:hover {

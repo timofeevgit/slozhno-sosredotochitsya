@@ -4,14 +4,15 @@
   переключая тему
 */
 
-:root.theme_dark {
+.theme_dark {
+  --accent-color: #FF0070;
   --header-logo-color: #DB00FF;
   --footer-logo-color: #DB00FF;
   --main-font-family: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
-  --bg-color-light: #db00ff;
   --bg-color-dark: #000028;
+  --subtitle-color: #000028;
   --nav-color: #ff0070;
   --main-text-color: #f1b2ce;
   --section-heading-color: #ff0070;
@@ -26,7 +27,7 @@
   */
 }
 
-.theme_dark.decoration-rec {
+.theme_dark .decoration-rec {
   display: block;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .theme_dark.title-decor {
-  background-color: #ff0070;
+  background-color: var(--accent-color);
 }
 
 .theme_dark.cover__title {
@@ -49,11 +50,11 @@
 }
 
 .theme_dark.subtitle {
-  color: #000028;
+  color: var(--subtitle-color);
 }
 
 .theme_dark.main__title {
-  color: var(-section-heading-color);
+  color: var(--section-heading-color);
 }
 
 .theme_dark.main__text {
@@ -69,7 +70,7 @@
   border: 1px solid transparent;
 }
 
-.theme_dark.header__theme-menu-button:hover {
+.theme_dark .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
@@ -82,7 +83,7 @@
   border-block-end: 1px solid var(--nav-color);
 }
 
-.theme_dark.links {
+.theme_dark .links {
   text-shadow: 1px 2px 0 #ff0070;
 }
 
