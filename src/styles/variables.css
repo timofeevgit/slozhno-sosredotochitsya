@@ -17,6 +17,9 @@
   --nav-color: #ff0070;
   --main-text-color: #f1b2ce;
   --section-heading-color: #ff0070;
+  --cover-text-shadow: #FF0070;
+  --link-shadow-color: #ff0070;
+  --subtitle-color: #000028;
 }
 
 @media (width <= 375px) {

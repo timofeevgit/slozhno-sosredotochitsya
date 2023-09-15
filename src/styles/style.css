@@ -118,7 +118,7 @@
   grid-column-start: 4;
   grid-column-end: 1;
   color: var(--header-logo-color);
-  text-shadow: 4px 4px 0 var(--section-heading-color);
+  text-shadow: 4px 4px 0 var( --cover-text-shadow);
   font-size: var(--header-logo-size);
 }
 
@@ -140,7 +140,7 @@
 }
 
 .subtitle {
-  color: #000028;
+  color: var(--subtitle-color);
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
   font-weight: 700;
@@ -175,7 +175,7 @@
 
 .links {
   text-decoration: none;
-  text-shadow: 2px 2px 0 #FF8DCB;
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
 }
 
 .links:hover {
@@ -382,12 +382,7 @@
   }
 
   .cover__title {
-    font-size: var(--header-logo-size);
     padding-inline-start: 9px;
-  }
-
-  .footer__title {
-    font-size: var(--footer-logo-size);
   }
 
   .cover__title_container {
